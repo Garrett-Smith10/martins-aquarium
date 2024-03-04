@@ -1,0 +1,25 @@
+.fish_card {
+    
+    
+}
+
+.fishList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 20em;
+    
+}
+
+.tank__care__title {
+    display: flex;
+    justify-content: right;
+    margin-right: 5em;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
