@@ -1,11 +1,23 @@
-import { fishList } from './fish.js'
+import { holyFishList } from './fish.js'
+import { soldierFishList } from './fish.js'
+import { normalFishList } from './fish.js'
+import { locationsList } from './locations.js'
+import { tipsList } from './tips.js'
 
-
-const allFish = fishList()
+const allFish = holyFishList()
 for (const fish of allFish) {
     console.log(fish)
 }
 
+const soldierFish = soldierFishList()
+for (const fish of soldierFish) {
+    console.log(fish)
+}
+
+const normalFish = normalFishList()
+for (const fish of normalFish) {
+    console.log(fish)
+}
 
 
 
@@ -18,6 +30,10 @@ for (const fish of allFish) {
  */
 
 const parentHTMLElement = document.querySelector(".fish-container")
+const parentHTMLElement1 = document.querySelector(".tips_display")
+const parentHTMLElement2 = document.querySelector(".locations_display")
 
 
-parentHTMLElement.innerHTML = fishList()
+parentHTMLElement.innerHTML = holyFishList() + soldierFishList() + normalFishList()
+parentHTMLElement1.innerHTML = tipsList()
+parentHTMLElement2.innerHTML = locationsList()

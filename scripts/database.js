@@ -64,41 +64,72 @@ const database = {
     locations: [
         {
             id: 1,
-            imageUrl:"",
+            imageUrl:"assets/CarribeanSea.png",
             location: "Caribbean Sea"
         },
         {
             id: 2,
-            imageUrl:"",
+            imageUrl:"assets/GreatBarrierReef.png",
             location: "Great Barrier Reef"
         },
         {
             id: 3,
-            imageUrl:"",
+            imageUrl:"assets/AmazonRiver.png",
             location: "Amazon River"
         },
         {
             id: 4,
-            imageUrl:"",
+            imageUrl:"assets/AtlanticOcean.png",
             location: "Atlantic Ocean"
         },
         {
             id: 5,
-            imageUrl:"",
+            imageUrl:"assets/FreshwaterLake.png",
             location: "Freshwater Lake"
         },
         {
             id: 6,
-            imageUrl:"",
+            imageUrl:"assets/PacificOcean.png",
             location: "Pacific Ocean"
         }
+    ],
+    tips: [
+        {
+            id: 1,
+            tip: "Regularly check and maintain the water temperature."
+        },
+        {
+            id: 2,
+            tip: "Perform partial water changes regularly to remove waste and replenish essential nutrients."
+        },
+        {
+            id: 3,
+            tip: "Keep an eye on water parameters such as pH, ammonia, nitrite, and nitrate levels."
+        },
+        {
+            id: 4,
+            tip: "Clean the tank and equipment (such as filters and pumps) regularly to prevent algae buildup and ensure proper functioning."
+        },
+        {
+            id: 5,
+            tip: "Provide appropriate filtration to keep the water clean and healthy for fish."
+        },
+        {
+            id: 6,
+            tip: "Monitor fish behavior and health regularly to detect any issues early and take necessary actions."
+        }
     ]
+    
 }
 
 export const getFish = () => {
     return database.fish.map(fish => ({...fish}))
 }
 
-export const getlocations = () => {
+export const getLocations = () => {
     return database.locations.map(locations => ({...locations}))
+}
+
+export const getTips = () => {
+    return database.tips.map(tips => ({...tips}))
 }
